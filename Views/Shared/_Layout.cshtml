@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Movie Site</title>
+    <link rel="stylesheet" href="~/Movies.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>My Movie Site</h1>
+        </div>
+        <div id="main">
+            @RenderBody()
+        </div>
+        <div id="footer">
+            &copy; @DateTime.Now.Year My Movie Site
+        </div>
+    </div>
+</body>
